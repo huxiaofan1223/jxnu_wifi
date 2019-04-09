@@ -1,0 +1,78 @@
+jxnu–£‘∞Õ¯API
+
+Login
+Hypertext Transfer Protocol
+    POST /cgi-bin/srun_portal HTTP/1.1\r\n
+    Accept-Encoding: identity\r\n
+    Host: 172.16.8.6:69\r\n
+    Content-Type: application/x-www-form-urlencoded\r\n
+    Content-Length: 192\r\n
+    Cache-Control: no-cache\r\n
+    User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1\r\n
+    SRun-Version: SRun3K Client_XW117S0B60401A-SRun3K.Portal\r\n
+    SRun-AuthorizationCRC32: 1F29E340\r\n
+    DiskDevice: |\r\n
+    OSName: Microsoft  (build 9200), 64-bit\r\n
+    SRun-ClientTime: 1553513782\r\n
+    SRun-AuthorizationKey: b4ba6270fb2e22795332d72f493ccb3f\r\n
+    CPUDevice: |\r\n
+    OSVersion: 6.2 Build9200\r\n
+    Accept: text/plain\r\n
+    \r\n
+    [Full request URI: http://172.16.8.6:69/cgi-bin/srun_portal]
+    [HTTP request 1/1]
+    [Response in frame: 143]
+    File Data: 192 bytes
+
+
+HTML Form URL Encoded: application/x-www-form-urlencoded
+    Form item: "action" = "login"
+    Form item: "username" = "201626203044@cmcc"
+    Form item: "password" = "7ccB6cc6Ecc9Bcc=;cc>>cg>?g"
+    Form item: "drop" = "0"
+    Form item: "pop" = "0"
+    Form item: "type" = "2"
+    Form item: "n" = "117"
+    Form item: "mbytes" = "0"
+    Form item: "minutes" = "0"
+    Form item: "ac_id" = "1"
+    Form item: "mac" = "e4:02:9b:8e:4f:54"
+    Form item: "ip" = "10.128.144.148"
+
+Logout
+Hypertext Transfer Protocol
+    POST /cgi-bin/srun_portal HTTP/1.1\r\n
+    Accept-Encoding: identity\r\n
+    Host: 172.16.8.6:69\r\n
+    Content-Type: application/x-www-form-urlencoded\r\n
+    Content-Length: 77\r\n
+    Cache-Control: no-cache\r\n
+    User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1\r\n
+    SRun-Version: SRun3K Client_XW117S0B60401A-SRun3K.Portal\r\n
+    SRun-AuthorizationCRC32: 55ACF9CC\r\n
+    DiskDevice: |\r\n
+    OSName: Microsoft  (build 9200), 64-bit\r\n
+    SRun-ClientTime: 1553525555\r\n
+    SRun-AuthorizationKey: b4ba6270fb2e22795332d72f493ccb3f\r\n
+    CPUDevice: |\r\n
+    OSVersion: 6.2 Build9200\r\n
+    Accept: text/plain\r\n
+
+HTML Form URL Encoded: application/x-www-form-urlencoded
+    Form item: "action" = "logout"
+    Form item: "ac_id" = "1"
+    Form item: "username" = "201626203044@cmcc"
+    Form item: "mac" = "e4:02:9b:8e:4f:54"
+    Form item: "type" = "2"
+
+
+def password_encrypt(password, key='1234567890'):
+    result = ''
+    for i in range(len(password)):
+        ki = ord(password[i]) ^ ord(key[len(key) - i % len(key) - 1])
+        _l = chr((ki & 0x0F) + 0x36)
+        _h = chr((ki >> 4 & 0x0F) + 0x63)
+        if i % 2 == 0: result += _l + _h
+        else: result += _h + _l
+    return result
+pythonº”√‹À„∑®
