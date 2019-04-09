@@ -6,5 +6,6 @@
 ## 有什么用
  - 网页版的登录每次都需要输入账号密码,很垃圾
  - 用此软件不需要输入账号密码,甚至还能自动登录
+***
 
-[安卓apk下载]https://github.com/huxiaofan1223/jxnu_wifi/raw/master/jxnu_wifi.apk
+https://github.com/huxiaofan1223/jxnu_wifi/raw/master/jxnu_wifi.apk
