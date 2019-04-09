@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#44B78B</color>
+    <color name="colorPrimaryDark">#44B78B</color>
+    <color name="colorAccent">#44B78B</color>
+
+    <color name="primary">#409EFF</color>
+    <color name="success">#44B78B</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="mid_black">#333</color>
+    <color name="gray">#666</color>
+    <color name="danger">#F56C6C</color>
+</resources>

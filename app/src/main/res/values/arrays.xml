@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr">
+        <item >校园网络</item>
+        <item >联通校园网络</item>
+        <item >移动校园网络</item>
+        <item >电信校园网络</item>
+    </string-array>
+</resources>
