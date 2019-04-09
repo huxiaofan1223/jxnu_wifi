@@ -8,9 +8,5 @@
  - 用此软件不需要输入账号密码,甚至还能自动登录
 ***
 
-<<<<<<< HEAD
 ###安卓apk下载
 https://github.com/huxiaofan1223/jxnu_wifi/raw/master/jxnu_wifi.apk
-=======
-https://github.com/huxiaofan1223/jxnu_wifi/raw/master/jxnu_wifi.apk
->>>>>>> 5351faaad1b785fe3496c68e540a43d904836013
